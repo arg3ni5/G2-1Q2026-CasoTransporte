@@ -1,5 +1,5 @@
 ﻿Public Class Propietario
-    Private _IdPersona As Integer
+    Private _IdPersona As String
     Private _Telefono As String
     Private _Direccion As String
 
@@ -12,8 +12,8 @@
         Me.IdPersona = IdPersona
         Me.Telefono = Telefono
         Me.Direccion = Direccion
-
-     Public Property IdPersona As String
+    End Sub
+    Public Property IdPersona As String
         Get
             Return _IdPersona
         End Get

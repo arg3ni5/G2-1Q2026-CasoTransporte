@@ -31,3 +31,5 @@ BEGIN
   );
 END
 GO
+
+-- Nota: La columna IdVehiculo es nullable y no tiene FK en esta etapa para permitir el desarrollo paralelo del módulo de Vehículos. Se agregará la restricción FK una vez que el módulo de Vehículos esté listo y se pueda garantizar la integridad referencial.

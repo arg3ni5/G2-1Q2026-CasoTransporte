@@ -23,6 +23,7 @@ Public Class PersonaDB
         End Using
         Return True
     End Function
+
     Public Function EliminarPersona(ByVal id As Integer, ByRef errorMessage As String) As Boolean
 
         Dim query As String = "DELETE FROM Personas WHERE IDPersona = @Id"

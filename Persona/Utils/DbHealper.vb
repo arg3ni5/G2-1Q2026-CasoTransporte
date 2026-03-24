@@ -41,4 +41,29 @@ Public Class DbHealper
             End Using
         End Using
     End Function
+
+    Public Function Execute(query As String, parameters As Dictionary(Of String, Object), ByRef errorMessage As String) As Boolean
+
+        If String.IsNullOrWhiteSpace(query) Then
+            Throw New ArgumentException("La consulta no puede estar vacía")
+        End If
+        Using conn As SqlConnection = GetConnection()
+            Using cmd As New SqlCommand(query, conn)
+                If parameters IsNot Nothing Then
+                    For Each p In parameters
+                        cmd.Parameters.AddWithValue(p.Key, p.Value)
+                    Next
+                End If
+
+                Try
+                    cmd.ExecuteNonQuery()
+
+                    Return True
+                Catch ex As Exception
+                    errorMessage = "Error al ejecutar la consulta: " & ex.Message
+                    Return False
+                End Try
+            End Using
+        End Using
+    End Function
 End Class

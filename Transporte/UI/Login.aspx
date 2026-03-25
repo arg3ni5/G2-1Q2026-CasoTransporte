@@ -56,7 +56,7 @@
 
                         <div class="d-grid mt-4">
                             <asp:Button ID="btnLogin" runat="server" Text="Ingresar"
-                                CssClass="btn btn-lg text-white fw-bold rounded-3"
+                                CssClass="btn btn-lg text-white fw-bold rounded-3" OnClick="btnLogin_Click"
                                 Style="background-color:#E76862;" />
                         </div>
                     </div>

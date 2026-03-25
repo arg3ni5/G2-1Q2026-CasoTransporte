@@ -28,7 +28,8 @@
     End Function
 
     Public Function Login(ByVal username As String, ByVal passwordHash As String, ByRef errorMessage As String) As DataTable
-        Dim query As String = "SELECT IdPersona, Username, Rol, Activo FROM Usuarios WHERE Username = @Username AND PasswordHash = @PasswordHash AND Activo = 1"
+        Dim query As String = "SELECT IdPersona, Username, Rol, Activo FROM Usuarios WHERE Username = 
+        @Username AND PasswordHash = @PasswordHash AND Activo = 1"
 
         Dim parameters As New Dictionary(Of String, Object) From {
             {"@Username", username},

@@ -1,4 +1,4 @@
-﻿Public Class Registro
+Public Class Registro
     Inherits System.Web.UI.Page
 
     Private dbPersona As New PersonaDB()
@@ -24,8 +24,10 @@
         usuario.Activo = True
 
         Dim errorMessage As String = String.Empty
+        Dim idPersona = dbPersona.CrearPersona(persona, errorMessage)
 
-        If dbPersona.CrearPersona(persona, errorMessage) Then
+        If idPersona > 0 Then
+            usuario.IdPersona = idPersona
             If dbUsuario.CrearUsuario(usuario, errorMessage) Then
                 SwalUtils.ShowSwal(Me, "Registro exitoso", "El usuario ha sido registrado correctamente.")
                 ClearForm()

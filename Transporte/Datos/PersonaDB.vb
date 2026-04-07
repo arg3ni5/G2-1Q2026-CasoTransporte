@@ -1,5 +1,5 @@
 ﻿Public Class PersonaDB
-    Private db As New DbHealper()
+    Private db As New DbHelper()
     'Crear Persona
     Public Function CrearPersona(ByVal pPersona As Models.Persona, ByRef errorMessage As String) As Boolean
         'Lógica para crear una nueva persona en la base de datos

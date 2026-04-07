@@ -9,8 +9,8 @@
     End Sub
 
     Protected Sub btnRegistrar_Click(sender As Object, e As EventArgs)
-        Dim persona As New Persona()
-        Dim usuario As New Usuario()
+        Dim persona As New Models.Persona()
+        Dim usuario As New Models.Usuario()
 
         persona.NombreCompleto = txtNombre.Text
         persona.Identificacion = txtIdentificacion.Text

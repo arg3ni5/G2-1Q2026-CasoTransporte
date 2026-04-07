@@ -3,7 +3,7 @@
 
 
 Public Class DbHelper
-    Private connectionString As String = ConfigurationManager.ConnectionStrings("II-46_PROGRAIIIConnectionString").ConnectionString
+    Private connectionString As String = ConfigurationManager.ConnectionStrings("TransporteDBConnectionString").ConnectionString
 
 
 

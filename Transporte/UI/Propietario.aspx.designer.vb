@@ -12,7 +12,7 @@ Option Explicit On
 
 Namespace Propietario
 
-    Partial Public Class Propietario
+    Partial Public Class Propietario1
 
         '''<summary>
         '''Control lblIdPersona.

@@ -11,41 +11,50 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class SiteMaster
+Partial Public Class TipoMulta
 
     '''<summary>
-    '''ContentPlaceHolder2 control.
+    '''txtDescripcion control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ContentPlaceHolder2 As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents txtDescripcion As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''lblUsuario control.
+    '''txtMonto control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblUsuario As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents txtMonto As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''btnSalir control.
+    '''chkActiva control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnSalir As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents chkActiva As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
-    '''ContentPlaceHolder1 control.
+    '''btnGuardar control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ContentPlaceHolder1 As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents btnGuardar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''lblMensaje control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblMensaje As Global.System.Web.UI.WebControls.Label
 End Class

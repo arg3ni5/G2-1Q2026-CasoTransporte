@@ -11,41 +11,50 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class SiteMaster
+Partial Public Class Multa
 
     '''<summary>
-    '''ContentPlaceHolder2 control.
+    '''ddlVehiculo control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ContentPlaceHolder2 As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents ddlVehiculo As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''lblUsuario control.
+    '''ddlTipoMulta control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblUsuario As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents ddlTipoMulta As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''btnSalir control.
+    '''txtFecha control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnSalir As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents txtFecha As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''ContentPlaceHolder1 control.
+    '''lblMensaje control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ContentPlaceHolder1 As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents lblMensaje As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''gvMultas control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents gvMultas As Global.System.Web.UI.WebControls.GridView
 End Class

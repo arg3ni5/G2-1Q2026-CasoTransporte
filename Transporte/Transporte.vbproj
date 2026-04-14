@@ -213,6 +213,8 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="UI\Multa.aspx" />
+    <Content Include="UI\TipoMulta.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -233,6 +235,7 @@
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Data\MultaDB.vb" />
     <Compile Include="Default.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -243,6 +246,7 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\TipoMulta.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -269,6 +273,22 @@
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="UI\Multa.aspx.designer.vb">
+      <DependentUpon>Multa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Multa.aspx.vb">
+      <DependentUpon>Multa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\TipoMulta.aspx.designer.vb">
+      <DependentUpon>TipoMulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TipoMulta.aspx.vb">
+      <DependentUpon>TipoMulta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Utils\DbHelper.vb" />
+    <Compile Include="Utils\Simple3Des.vb" />
     <Compile Include="ViewSwitcher.ascx.vb">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -317,11 +337,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Services\" />
-    <Folder Include="UI\" />
-    <Folder Include="Utils\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

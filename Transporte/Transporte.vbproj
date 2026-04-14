@@ -234,6 +234,8 @@
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Datos\PersonaDB.vb" />
+    <Compile Include="Datos\UsuarioDB.vb" />
     <Compile Include="Default.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -278,6 +280,9 @@
       <DependentUpon>Usuarios.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Utils\DbHelper.vb" />
+    <Compile Include="Utils\Simple3Des.vb" />
+    <Compile Include="Utils\SwalUT.vb" />
     <Compile Include="ViewSwitcher.ascx.vb">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

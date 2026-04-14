@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class Usuarios
 
     '''<summary>
+    '''Control LblIdPersona.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents LblIdPersona As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control LblUsername.
     '''</summary>
     '''<remarks>
@@ -95,6 +104,15 @@ Partial Public Class Usuarios
     Protected WithEvents RequiredFieldValidator3 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
+    '''Control ChkActivo.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ChkActivo As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
     '''Control BtnGuardar.
     '''</summary>
     '''<remarks>
@@ -104,11 +122,38 @@ Partial Public Class Usuarios
     Protected WithEvents BtnGuardar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control GridView1.
+    '''Control BtnModificar.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents BtnModificar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control BtnCancelar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents BtnCancelar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control LblInformacion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents LblInformacion As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control GvUsuarios.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents GvUsuarios As Global.System.Web.UI.WebControls.GridView
 End Class

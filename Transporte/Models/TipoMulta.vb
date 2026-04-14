@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 Imports Transporte.Utils
 
 Public Class TipoMultaDB
-    Private helper As New DbHelper()
+    Private helpel As New DbHelper()
 
     ' Listar todos los tipos de multa
     Public Function ListarTiposMulta() As DataTable

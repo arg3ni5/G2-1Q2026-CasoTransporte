@@ -23,6 +23,24 @@ Partial Public Class Multa
     Protected WithEvents ddlVehiculo As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
+    '''txtPlaca control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtPlaca As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtMonto  control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtMonto As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''ddlTipoMulta control.
     '''</summary>
     '''<remarks>

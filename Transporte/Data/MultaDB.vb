@@ -5,6 +5,7 @@ Imports Transporte.Utils
 Public Class MultaDB
     Private helper As New DbHelper()
 
+
     ' Listar todas las multas
     Public Function ListarMultas() As DataTable
         Dim sql As String = "
@@ -56,6 +57,7 @@ VALUES (@Vehiculo, @Tipo, @Fecha, 0)"
             Dim params As New List(Of SqlParameter) From {
                 New SqlParameter("@Id", id)
             }
+            helper.ExecuteNonQuery(sql, params)
             helper.ExecuteNonQuery(sql, params)
             mensaje = "Multa eliminada exitosamente."
             Return True

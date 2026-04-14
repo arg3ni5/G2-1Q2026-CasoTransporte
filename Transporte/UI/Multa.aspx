@@ -21,10 +21,26 @@
 
                 <div class="row mb-3">
                     <div class="col-md-6">
-                        <label>Vehículo</label>
+                        <label>Tipo de Vehículo</label>
                         <asp:DropDownList ID="ddlVehiculo" runat="server"
                             CssClass="form-select" />
                     </div>
+
+                 <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label>Num. Placa</label>
+                        <asp:TextBox ID="txtPlaca" runat="server"
+                            CssClass="form-control" />
+                    </div>
+
+
+                 <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label>Monto</label>
+                        <asp:TextBox ID="txtMonto" runat="server"
+                            CssClass="form-control" />
+                    </div>
+
 
                     <div class="col-md-6">
                         <label>Tipo de Multa</label>

@@ -3,8 +3,12 @@ Imports System.Data.SqlClient
 
 
 
+
+
 Public Class DbHelper
     Private connectionString As String = ConfigurationManager.ConnectionStrings("TransporteDBConnectionString").ConnectionString
+
+
 
 
 
@@ -14,14 +18,18 @@ Public Class DbHelper
             conn.Open()
         Catch ex As Exception
             conn.Dispose() 'limpia la conexion
-            Throw New Exception("Error al abrir la conexión: " & ex.Message)
+            Throw New Exception("Error al abrir la conexión: " & ex.Message)
         End Try
         Return conn
     End Function
 
+
+
     ' Método para ejecutar un comando SQL (INSERT, UPDATE, DELETE)
     ' Retorna si logro insertar o modificar
     Public Function ExecuteNonQuery(query As String, parameters As Dictionary(Of String, Object), ByRef errorMessage As String) As Boolean
+
+
 
         If String.IsNullOrWhiteSpace(query) Then
             Throw New ArgumentException("La consulta no puede estar vacía")
@@ -34,8 +42,12 @@ Public Class DbHelper
                     Next
                 End If
 
+
+
                 Try
                     cmd.ExecuteNonQuery()
+
+
 
                     Return True
                 Catch ex As Exception
@@ -46,17 +58,25 @@ Public Class DbHelper
         End Using
     End Function
 
+
+
     Public Function ExecuteQuery(
-        query As String,
-        parameters As Dictionary(Of String, Object),
-        ByRef errorMessage As String) As DataTable
+    query As String,
+    parameters As Dictionary(Of String, Object),
+    ByRef errorMessage As String) As DataTable
+
+
 
         'Validar que la consulta no esté vacía
         If String.IsNullOrWhiteSpace(query) Then
             Throw New ArgumentException("La consulta no puede estar vacía")
         End If
 
+
+
         Dim dt As New DataTable()
+
+
 
         Using conn As SqlConnection = GetConnection()
             Using cmd As New SqlCommand(query, conn)
@@ -66,10 +86,14 @@ Public Class DbHelper
                     Next
                 End If
 
+
+
                 Try
                     Using adapter As New SqlDataAdapter(cmd)
                         adapter.Fill(dt)
                     End Using
+
+
 
                     Return dt
                 Catch ex As Exception
@@ -81,11 +105,16 @@ Public Class DbHelper
     End Function
 
 
+
+
+
     'Función para ejecutar una consulta que devuelve un solo valor (por ejemplo, COUNT, SUM, etc.)
     Public Function ExecuteScalar(query As String, parameters As Dictionary(Of String, Object), ByRef errorMessage As String) As Object
         If String.IsNullOrWhiteSpace(query) Then
             Throw New ArgumentException("La consulta no puede estar vacía")
         End If
+
+
 
         Using conn As SqlConnection = GetConnection()
             Using cmd As New SqlCommand(query, conn)
@@ -95,9 +124,11 @@ Public Class DbHelper
                     Next
                 End If
 
+
+
                 Try
                     Return cmd.ExecuteScalar() ' Devuelve el primer valor de la primera fila del resultado
-                Catch ex As Exception
+                Catch ex As Exception
                     errorMessage = "Error al ejecutar la consulta: " & ex.Message
                     Return Nothing
                 End Try
@@ -105,3 +136,5 @@ Public Class DbHelper
         End Using
     End Function
 End Class
+
+

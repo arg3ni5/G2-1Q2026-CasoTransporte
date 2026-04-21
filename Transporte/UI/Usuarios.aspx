@@ -3,25 +3,15 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
-
-
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-5">
-
-
-
                 <div class="card shadow">
                     <div class="card-header bg-primary text-white">
                         <h4 class="mb-0">Registro de Usuarios</h4>
                     </div>
 
-
-
                     <div class="card-body">
-
-
 
                         <asp:Label ID="LblIdPersona" runat="server" Visible="false"></asp:Label>
 
